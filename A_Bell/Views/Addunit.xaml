@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="A_Bell.Views.Addunit" BackgroundImage="https://upload.cc/i1/2019/09/09/STHlNk.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid x:Name="TopBar"  BackgroundColor="#00A6FF"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="7*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+
+
+
+                <Image Grid.Row="0" Grid.Column="0" Source="https://upload.cc/i1/2019/09/09/JH92AO.png" />
+
+
+                <Label Grid.Row="0" Grid.Column="1"  x:Name="TopBarTitle" Text="Add a new unit" FontSize="30" FontAttributes="Bold" VerticalOptions="Center" TextColor="#47525E"  HorizontalOptions="Center" />
+            </Grid>
+            <Label Text=""    />
+            <Entry Placeholder="Unit Code" />
+            <Label Text=""    />
+            <Entry Placeholder="Work Shop Time" />
+            <Label Text=""    />
+            <Picker Title="Campus">
+                <Picker.Items>
+                    <x:String>Garden Point</x:String>
+                    <x:String>Kelvin Grove</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label Text=""    />
+            <Entry Placeholder="Room Number" />
+            <Label Text=""    />
+            <Label Text=""    />
+            <Button Text="Submit" HeightRequest="70" WidthRequest="10" FontSize ="20"  BackgroundColor ="#47525E" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
