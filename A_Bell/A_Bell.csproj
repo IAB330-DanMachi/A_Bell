@@ -15,22 +15,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\Addunit.xaml">
+    <EmbeddedResource Update="Addunit.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Signup.xaml">
+    <EmbeddedResource Update="Signup.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Studentprofile.xaml">
+    <EmbeddedResource Update="Studentprofile.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Teacherbluetooth.xaml">
+    <EmbeddedResource Update="Teacherbluetooth.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Test.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Unitlist.xaml">
+    <EmbeddedResource Update="Unitlist.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
 
