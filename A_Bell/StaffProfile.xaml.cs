@@ -10,6 +10,15 @@ namespace A_Bell
         public StaffProfile()
         {
             InitializeComponent();
+            lblClickFucn();
+        }
+        void lblClickFucn() {
+            lblClick.GestureRecognizers.Add(new TapGestureRecognizer()
+            {
+                Command = new Command(()=> {
+                    DisplayAlert("Verfication code","XXX XXX","OK");
+                })
+            });
         }
     }
 }

@@ -7,7 +7,7 @@
              x:Class="A_Bell.StaffProfile">
     <ContentPage.Content>
         <AbsoluteLayout>
-            <StackLayout BackgroundColor="Aqua"
+            <StackLayout BackgroundColor="#00A6FF"
                          AbsoluteLayout.LayoutBounds="0,0,1,0.08"
                          AbsoluteLayout.LayoutFlags="All">
                 <!--Create a Tital-->
@@ -21,20 +21,69 @@
             </StackLayout>
             <!--Create a back button-->
             <Button Text="Back" 
-                    BackgroundColor="Aqua" 
+                    BackgroundColor="#00A6FF" 
                     FontSize="10"
                     AbsoluteLayout.LayoutBounds="0,0,0.2,0.08"
                     AbsoluteLayout.LayoutFlags="All" 
                     Font="Arial"/>
             <!--Create a user image-->
-            <Button Text="image"    
-                    AbsoluteLayout.LayoutBounds ="0.5,0.2,100,100"
-                    AbsoluteLayout.LayoutFlags="PositionProportional"
-                    BackgroundColor="Gray" 
-                    IsEnabled="False"
-                    CornerRadius="50"/>
-            
-            
+            <Frame BorderColor="Black"
+                   CornerRadius="75"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.5,0.2,150,150"
+                   AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Image Source="https://upload.cc/i1/2019/09/18/hA7f5J.png"
+                       Aspect="Fill"
+                       Margin="-20"/>
+            </Frame>
+            <Frame BorderColor="Black"
+                   CornerRadius="10"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.5,0.44,0.8,0.1"
+                   AbsoluteLayout.LayoutFlags="All" 
+                   HorizontalOptions="FillAndExpand">
+                <Label Text="Name: "
+                       FontSize="16" 
+                       HorizontalOptions="StartAndExpand" 
+                       VerticalOptions="CenterAndExpand" 
+                       VerticalTextAlignment="Start"/>
+            </Frame>
+            <Frame BorderColor="Black"
+                   CornerRadius="10"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.5,0.56,0.8,0.1"
+                   AbsoluteLayout.LayoutFlags="All" 
+                   HorizontalOptions="FillAndExpand">
+                <Label Text="Staff No.: "
+                          FontSize="16" 
+                          HorizontalOptions="StartAndExpand" 
+                          VerticalOptions="CenterAndExpand" 
+                          VerticalTextAlignment="Start"/>
+            </Frame>
+            <Frame BorderColor="Black"
+                   CornerRadius="10"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.5,0.68,0.8,0.1"
+                   AbsoluteLayout.LayoutFlags="All" 
+                   HorizontalOptions="FillAndExpand">
+                <Label Text="Email: "
+                          FontSize="16" 
+                          HorizontalOptions="StartAndExpand" 
+                          VerticalOptions="CenterAndExpand" 
+                          VerticalTextAlignment="Start"/>
+            </Frame>
+            <Frame BorderColor="Black"
+                   CornerRadius="10"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.5,0.80,0.8,0.1"
+                   AbsoluteLayout.LayoutFlags="All" 
+                   HorizontalOptions="FillAndExpand">
+                <Label Text="Get verification code"
+                       FontSize="16" 
+                       HorizontalOptions="StartAndExpand" 
+                       VerticalOptions="CenterAndExpand"
+                       x:Name="lblClick"/>
+            </Frame>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

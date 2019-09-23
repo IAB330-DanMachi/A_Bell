@@ -8,7 +8,7 @@
     <ContentPage.Content>
         <AbsoluteLayout>
 
-            <StackLayout BackgroundColor="Aqua"
+            <StackLayout BackgroundColor="#00A6FF"
                          AbsoluteLayout.LayoutBounds="0,0,1,0.08"
                          AbsoluteLayout.LayoutFlags="All">
                 <!--Create a Tital-->
@@ -22,7 +22,7 @@
             </StackLayout>
             <!--Create a back button-->
             <Button Text="Back" 
-                    BackgroundColor="Aqua" 
+                    BackgroundColor="#00A6FF" 
                     FontSize="10"
                     AbsoluteLayout.LayoutBounds="0,0,0.2,0.08"
                     AbsoluteLayout.LayoutFlags="All" 
