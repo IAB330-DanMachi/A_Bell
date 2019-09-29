@@ -21,33 +21,41 @@
                        FontAttributes="Bold"/>
             </StackLayout>
             <!--Create a back button-->
-            <Button Text="Back" 
+            <Button Text="Back"
                     BackgroundColor="#00A6FF" 
                     FontSize="10"
                     AbsoluteLayout.LayoutBounds="0,0,0.2,0.08"
                     AbsoluteLayout.LayoutFlags="All" 
                     Font="Arial"/>
             <!--Create a connect button-->
+            <Image Source="https://upload.cc/i1/2019/09/18/l2F8p9.png"
+                   AbsoluteLayout.LayoutBounds="0.5,0.3,100,100"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   Margin="-30"/>
             <Button Text="Connect"
-                    BorderColor="Black"
+                    BackgroundColor="White"
+                    BorderColor="White"
                     BorderWidth="1"
-                    AbsoluteLayout.LayoutBounds="0.5,0.5,100,100"
+                    AbsoluteLayout.LayoutBounds="0.5,0.3,100,100"
                     AbsoluteLayout.LayoutFlags="PositionProportional"
                     CornerRadius="50"
-                    Font="Arial"
-                    FontSize="Large"/>
+                    Font="Arial"/>
             <!--Create a Report button-->
-            <Button Text="Roport Absent"
-                    AbsoluteLayout.LayoutBounds="0,1,0.5,0.1"
-                    AbsoluteLayout.LayoutFlags="All" 
-                    BorderWidth="0.5"
-                    BorderColor="Black"/>
+            <ImageButton Aspect="AspectFit"
+                         Source="https://upload.cc/i1/2019/09/25/FjlZAH.png"
+                         AbsoluteLayout.LayoutBounds="0,1,0.5,0.1"
+                         AbsoluteLayout.LayoutFlags="All" 
+                         BorderWidth="0.5"
+                         BorderColor="Black"
+                         BackgroundColor="White"/>
             <!--Create a myProfile button-->
-            <Button Text="Mt profile"
-                    AbsoluteLayout.LayoutBounds="1,1,0.5,0.1"
-                    AbsoluteLayout.LayoutFlags="All" 
-                    BorderWidth="0.5"
-                    BorderColor="Black"/>
+            <ImageButton Aspect="AspectFit"
+                         Source="https://upload.cc/i1/2019/09/18/FzulY5.png"                   
+                         AbsoluteLayout.LayoutBounds="1,1,0.5,0.1"
+                         AbsoluteLayout.LayoutFlags="All" 
+                         BorderWidth="0.5"
+                         BorderColor="Black"
+                         BackgroundColor="White"/>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
