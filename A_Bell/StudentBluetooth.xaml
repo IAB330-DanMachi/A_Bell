@@ -15,7 +15,7 @@
                 <Label Text="IAB330"                      
                        HorizontalOptions="CenterAndExpand" 
                        HorizontalTextAlignment="Center" 
-                       FontSize="16" 
+                       FontSize="18" 
                        VerticalOptions="CenterAndExpand" 
                        FontFamily="Arial" 
                        FontAttributes="Bold"/>

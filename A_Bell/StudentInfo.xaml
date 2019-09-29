@@ -4,14 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="A_Bell.StaffProfile">
+             x:Class="A_Bell.StudentInfo">
     <ContentPage.Content>
         <AbsoluteLayout>
             <StackLayout BackgroundColor="#00A6FF"
                          AbsoluteLayout.LayoutBounds="0,0,1,0.08"
                          AbsoluteLayout.LayoutFlags="All">
                 <!--Create a Tital-->
-                <Label Text="My Profile"                      
+                <Label Text="Student Information"                      
                        HorizontalOptions="CenterAndExpand" 
                        HorizontalTextAlignment="Center" 
                        FontSize="18" 
@@ -28,66 +28,58 @@
                     Font="Arial"/>
             <!--Create a user image-->
             <Frame BorderColor="Black"
-                   CornerRadius="75"
+                   CornerRadius="60"
                    HasShadow="False"
-                   AbsoluteLayout.LayoutBounds ="0.5,0.2,150,150"
+                   AbsoluteLayout.LayoutBounds ="0.03,0.2,120,120"
                    AbsoluteLayout.LayoutFlags="PositionProportional">
                 <Image Source="https://upload.cc/i1/2019/09/18/hA7f5J.png"
                        Aspect="Fill"
                        Margin="-20"/>
             </Frame>
-            <!--Create name box-->
+            <!--Create a name tag for student-->
+            <StackLayout AbsoluteLayout.LayoutBounds ="0.9,0.2,0.63,0.15"
+                   AbsoluteLayout.LayoutFlags="All">
+                <Label Text="Student Name"
+                       FontFamily="Arial"
+                       FontAttributes="Bold"
+                       FontSize="28"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <!--Create Email box-->
             <Frame BorderColor="Black"
                    CornerRadius="10"
                    HasShadow="False"
                    AbsoluteLayout.LayoutBounds ="0.5,0.44,0.8,0.1"
                    AbsoluteLayout.LayoutFlags="All" 
                    HorizontalOptions="FillAndExpand">
-                <Label Text="Name: "
+                <Label Text="Email:  "
                        FontSize="16" 
                        HorizontalOptions="StartAndExpand" 
                        VerticalOptions="CenterAndExpand" 
                        VerticalTextAlignment="Start"/>
             </Frame>
-            <!--Create staff number box-->
+            <!--Create student ID box-->
             <Frame BorderColor="Black"
                    CornerRadius="10"
                    HasShadow="False"
                    AbsoluteLayout.LayoutBounds ="0.5,0.56,0.8,0.1"
                    AbsoluteLayout.LayoutFlags="All" 
                    HorizontalOptions="FillAndExpand">
-                <Label Text="Staff No.: "
+                <Label Text="Student ID: "
                           FontSize="16" 
                           HorizontalOptions="StartAndExpand" 
                           VerticalOptions="CenterAndExpand" 
                           VerticalTextAlignment="Start"/>
             </Frame>
-            <!--Create email box-->
-            <Frame BorderColor="Black"
-                   CornerRadius="10"
-                   HasShadow="False"
-                   AbsoluteLayout.LayoutBounds ="0.5,0.68,0.8,0.1"
-                   AbsoluteLayout.LayoutFlags="All" 
-                   HorizontalOptions="FillAndExpand">
-                <Label Text="Email: "
-                          FontSize="16" 
-                          HorizontalOptions="StartAndExpand" 
-                          VerticalOptions="CenterAndExpand" 
-                          VerticalTextAlignment="Start"/>
-            </Frame>
-            <!--Create get verification code button-->
-            <Frame BorderColor="Black"
-                   CornerRadius="10"
-                   HasShadow="False"
-                   AbsoluteLayout.LayoutBounds ="0.5,0.80,0.8,0.1"
-                   AbsoluteLayout.LayoutFlags="All" 
-                   HorizontalOptions="FillAndExpand">
-                <Label Text="Get verification code"
-                       FontSize="16" 
-                       HorizontalOptions="StartAndExpand" 
-                       VerticalOptions="CenterAndExpand"
-                       x:Name="lblClick"/>
-            </Frame>
+            <Button Text="DELETE"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    AbsoluteLayout.LayoutBounds ="0.5,0.9,120,60"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    CornerRadius="10"/>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
