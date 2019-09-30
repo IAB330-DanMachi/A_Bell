@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="A_Bell.Bluetoothon">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout BackgroundColor="Green"
+                         AbsoluteLayout.LayoutBounds="0,0,1,0.1"
+                         AbsoluteLayout.LayoutFlags="All">
+                <!--Create a Tital-->
+                <Label Text="CAB330"                      
+                       HorizontalOptions="CenterAndExpand" 
+                       VerticalOptions="CenterAndExpand"
+                       AbsoluteLayout.LayoutBounds="0.5,0.1,0.2,0.1"  
+                       AbsoluteLayout.LayoutFlags="All"
+                       FontSize="20" 
+                       FontFamily="Arial" 
+                       FontAttributes="Bold"/>
+
+            </StackLayout>
+
+            <!--Create a back button-->
+            <Button Text="Back"    
+                    BackgroundColor="Green"                     
+                    FontSize="20"
+                    AbsoluteLayout.LayoutBounds="0,0,0.2,0.1"
+                    AbsoluteLayout.LayoutFlags="All" 
+                    Font="Arial"/>
+
+            <StackLayout BackgroundColor="Green"
+                         AbsoluteLayout.LayoutBounds="0,0.11,1,0.42"
+                         AbsoluteLayout.LayoutFlags="All">
+                <!--Create a Tital-->
+                <Label Text="Press to turn off"
+                       BackgroundColor="Green"
+                       HorizontalOptions="CenterAndExpand" 
+                       VerticalOptions="EndAndExpand"
+                       AbsoluteLayout.LayoutBounds="0,0.1,0.5,0.4"   
+                       FontSize="16" 
+                       FontFamily="Arial" 
+                       FontAttributes="Bold"
+                       AbsoluteLayout.LayoutFlags="All"/>
+            </StackLayout>
+
+
+            <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" Color="#1690F4"/>
+            <!--Create a bluetooth button-->
+
+            <Frame 
+                   BackgroundColor="Green"  
+                   AbsoluteLayout.LayoutBounds ="1,0,0.2,0.1"/>
+            <ImageButton Source="https://upload.cc/i1/2019/09/30/RU2rWq.png"
+                    BackgroundColor="Green"
+                            AbsoluteLayout.LayoutBounds ="0.97,0.03,0.04,0.04"
+                             AbsoluteLayout.LayoutFlags="All"
+                             Margin="-20"/>
+
+            <!--Create a user image-->
+            <Frame BorderColor="Black"
+                   BackgroundColor="Green"
+                   CornerRadius="75"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.5,0.2,150,150"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   >
+                <Image Source="https://upload.cc/i1/2019/09/29/qePDpw.png"
+                             BackgroundColor="Green"
+                             Aspect="AspectFit"
+                             Margin="-20"/>
+            </Frame>
+            <Button Text="00:00"
+                    AbsoluteLayout.LayoutBounds ="0.5,0.21,136,136"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    CornerRadius="65"
+                    BackgroundColor="Green"
+                    FontSize="20"/>
+            <!--test-->
+            <Frame 
+                   BackgroundColor="White"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.05,0.49,0.2,0.12"
+                   AbsoluteLayout.LayoutFlags="PositionProportional">
+                <ImageButton Source="https://upload.cc/i1/2019/09/18/hA7f5J.png"
+                             BackgroundColor="White"
+                             Aspect="Fill"
+                             Margin="-20"/>
+            </Frame>
+
+            <Button BackgroundColor="Transparent"
+                    Text="Anna Sewell&#10;n9808470"
+                    AbsoluteLayout.LayoutBounds ="0.05,0.53,0.65,0.12" 
+                    AbsoluteLayout.LayoutFlags="All"
+                    FontSize="10"
+                    Font="Arial"/>
+
+            <Frame 
+                   BackgroundColor="White"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.85,0.49,0.2,0.12"
+                   AbsoluteLayout.LayoutFlags="PositionProportional">
+                <ImageButton Source="https://upload.cc/i1/2019/09/24/R2YLk4.png"
+                             BackgroundColor="White"
+                             Aspect="Fill"
+                             Margin="-20"/>
+            </Frame>
+
+            <StackLayout BackgroundColor="White"
+                         AbsoluteLayout.LayoutBounds="0.2,0.57,1,0.001"
+                         AbsoluteLayout.LayoutFlags="All">
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="Gray"  AbsoluteLayout.LayoutBounds="0,1,1,0.3"/>
+            </StackLayout>
+            <!--test-->
+            <Frame 
+                   BackgroundColor="White"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.05,0.59,0.2,0.12"
+                   AbsoluteLayout.LayoutFlags="PositionProportional">
+                <ImageButton Source="https://upload.cc/i1/2019/09/18/hA7f5J.png"
+                             BackgroundColor="White"
+                             Aspect="Fill"
+                             Margin="-20"/>
+            </Frame>
+
+            <Button BackgroundColor="Transparent"
+                    Text="Jane Austen&#10;n98808452"
+                    AbsoluteLayout.LayoutBounds ="0.05,0.64,0.65,0.12" 
+                    AbsoluteLayout.LayoutFlags="All"
+                    FontSize="10"
+                    Font="Arial"/>
+
+            <Frame 
+                   BackgroundColor="Transparent"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.85,0.59,0.2,0.12"
+                   AbsoluteLayout.LayoutFlags="PositionProportional">
+                <ImageButton Source="https://upload.cc/i1/2019/09/30/mjpW0Z.png"
+                             BackgroundColor="White"
+                             Aspect="Fill"
+                             Margin="-20"/>
+            </Frame>
+            
+            <StackLayout BackgroundColor="White"
+                         AbsoluteLayout.LayoutBounds="0,0.93,0.5,0.06"
+                         AbsoluteLayout.LayoutFlags="All">
+                <!--Create a Tital-->
+                <Label Text="Total: 8"
+                       BackgroundColor="Transparent"
+                       HorizontalOptions="CenterAndExpand" 
+                       AbsoluteLayout.LayoutBounds="0,0.9,0.5,0.4"   
+                       FontSize="16" 
+                       FontFamily="Arial" 
+                       FontAttributes="Bold"
+                       AbsoluteLayout.LayoutFlags="All"/>
+            </StackLayout>
+            <StackLayout BackgroundColor="White"
+                         AbsoluteLayout.LayoutBounds="1,0.93,0.5,0.06"
+                         AbsoluteLayout.LayoutFlags="All">
+                <!--Create a Tital-->
+                <Label Text="Absence: 3"
+                       BackgroundColor="White"
+                       HorizontalOptions="CenterAndExpand" 
+                       AbsoluteLayout.LayoutBounds="1,0.9,0.5,0.4"   
+                       FontSize="16" 
+                       FontFamily="Arial" 
+                       FontAttributes="Bold"
+                       AbsoluteLayout.LayoutFlags="All"/>
+            </StackLayout>
+
+            <Frame 
+                   BackgroundColor="Green"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.45,0.94,1,0.07"
+                   AbsoluteLayout.LayoutFlags="PositionProportional">
+                <ImageButton Source="https://upload.cc/i1/2019/09/25/aqIsAD.png"
+                             BackgroundColor="White"
+                             Aspect="Fill"
+                             Margin="-20"/>
+            </Frame>
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

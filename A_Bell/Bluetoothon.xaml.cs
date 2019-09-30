@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace A_Bell.Views
+namespace A_Bell
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Unitlist : ContentPage
+    public partial class Bluetoothon : ContentPage
     {
-        public Unitlist()
+        public Bluetoothon()
         {
             InitializeComponent();
         }
-
     }
 }

@@ -17,16 +17,23 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-
-
-
-                <Image Grid.Row="0" Grid.Column="0" Source="https://upload.cc/i1/2019/09/09/JH92AO.png" />
-
+                <Frame 
+                   BackgroundColor="Transparent"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds="0,0,0.2,0.1"
+                   AbsoluteLayout.LayoutFlags="All">
+                    <ImageButton Source="https://upload.cc/i1/2019/09/09/JH92AO.png"
+                             BackgroundColor="Transparent"
+                             Aspect="Fill"
+                             Margin="-20"/>
+                </Frame>
 
                 <Label Grid.Row="0" Grid.Column="1"  x:Name="TopBarTitle" Text="Add a new unit" FontSize="30" FontAttributes="Bold" VerticalOptions="Center" TextColor="#47525E"  HorizontalOptions="Center" />
             </Grid>
             <Label Text=""    />
             <Entry Placeholder="Unit Code" />
+            <Label Text=""    />
+            <Entry Placeholder="Teaching Period" />
             <Label Text=""    />
             <Entry Placeholder="Work Shop Time" />
             <Label Text=""    />

@@ -6,36 +6,78 @@
              mc:Ignorable="d"
              x:Class="A_Bell.Views.Unitlist">
     <ContentPage.Content>
-        <StackLayout>
+        <AbsoluteLayout>
 
-            <Grid x:Name="TopBar"  BackgroundColor="#00A6FF"  >
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="7*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
+            <StackLayout BackgroundColor="#00A6FF"
+                         AbsoluteLayout.LayoutBounds="0,0,1,0.1"
+                         AbsoluteLayout.LayoutFlags="All">
+                <!--Create a Tital-->
+                <Label Text="Unit List"                      
+                       HorizontalOptions="CenterAndExpand" 
+                       VerticalOptions="CenterAndExpand"
+                       AbsoluteLayout.LayoutBounds="0.5,0.1,0.2,1"  
+                       AbsoluteLayout.LayoutFlags="All"
+                       FontSize="25" 
+                       FontFamily="Arial" 
+                       FontAttributes="Bold"/>
 
+            </StackLayout>
 
+            <Frame 
+                   BackgroundColor="#00A6FF"  
+                   AbsoluteLayout.LayoutBounds ="0,0,0.2,0.08"/>
+            <ImageButton Source="https://upload.cc/i1/2019/09/09/JH92AO.png"
+                    BackgroundColor="#00A6FF"
+                    AbsoluteLayout.LayoutBounds ="0,0.02,0.2,0.05"
+                AbsoluteLayout.LayoutFlags="All"        
+                             Margin="-20"/>
 
-
-                <Image Grid.Row="0" Grid.Column="0" Source="https://upload.cc/i1/2019/09/09/JH92AO.png" />
-
-
-                <Label Grid.Row="0" Grid.Column="1"  x:Name="TopBarTitle" Text="Unit List" FontSize="30" FontAttributes="Bold" VerticalOptions="Center" TextColor="#47525E"  HorizontalOptions="Center" />
-            </Grid>
-            <Label VerticalOptions="Center"  Text=""    />
-            <Entry Placeholder="Unit Code" />
+            <Frame 
+                   BackgroundColor="#00A6FF"  
+                   AbsoluteLayout.LayoutBounds ="1,0,0.15,0.08"/>
+            <ImageButton Source="https://upload.cc/i1/2019/09/30/5iU6Cf.png"
+                    BackgroundColor="#00A6FF"
+                    AbsoluteLayout.LayoutBounds ="1,0.034,0.2,0.03"
+                AbsoluteLayout.LayoutFlags="All"        
+                             Margin="-20"/>
             
+            <StackLayout BackgroundColor="White"
+                         AbsoluteLayout.LayoutBounds="0.2,0.12,1,0.2"
+                         AbsoluteLayout.LayoutFlags="All">
+                <Label Text="&#10;&#13;&#13;&#13;&#13;&#13;IAB330&#10;&#13;&#13;&#13;&#13;&#13;Workshop, GP S-502&#10;&#13;&#13;&#13;&#13;&#13;Wednesday 4:00p.m. - 6:00p.m."
+                       BackgroundColor="White"
+
+                       AbsoluteLayout.LayoutBounds="0.2,0.2,1,0.1"   
+                       FontSize="20" 
+                       FontFamily="Arial" 
+                       FontAttributes="Bold"
+                       AbsoluteLayout.LayoutFlags="All"/>
+            </StackLayout>
             
-            <Button Text="Search" Clicked="Button_Clicked"/>
-            <Label x:Name="label2"/>
+            <StackLayout BackgroundColor="White"
+                         AbsoluteLayout.LayoutBounds="0.2,0.28,1,0.01"
+                         AbsoluteLayout.LayoutFlags="All">
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="Black"  AbsoluteLayout.LayoutBounds="0,1,1,0.3"/>
+            </StackLayout>
+            
+            <StackLayout BackgroundColor="White"
+                         AbsoluteLayout.LayoutBounds="0.2,0.35,1,0.2"
+                         AbsoluteLayout.LayoutFlags="All">
+                <Label Text="&#10;&#13;&#13;&#13;&#13;&#13;IAB330&#10;&#13;&#13;&#13;&#13;&#13;Workshop, GP S-502&#10;&#13;&#13;&#13;&#13;&#13;Wednesday 4:00p.m. - 6:00p.m."
+                       
+                       BackgroundColor="White"
+
+                       AbsoluteLayout.LayoutBounds="0.2,0.2,1,0.1"   
+                       FontSize="20" 
+                       FontFamily="Arial" 
+                       FontAttributes="Bold"
+                       AbsoluteLayout.LayoutFlags="All"/>
+            </StackLayout>
+            
 
 
-            <Button Text="Search" HeightRequest="70" WidthRequest="10" FontSize ="20"  BackgroundColor ="#47525E" TextColor="White" Clicked="Button_Clicked"/>
-            <Label x:Name="submit" FontSize ="30"/>
-        </StackLayout>
+            
+
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

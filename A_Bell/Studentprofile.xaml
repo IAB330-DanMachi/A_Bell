@@ -4,31 +4,90 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="A_Bell.Views.Studentprofile">
+             x:Class="A_Bell.StaffProfile">
     <ContentPage.Content>
-        <StackLayout>
-            <Grid x:Name="TopBar"  BackgroundColor="#00A6FF"  >
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="7*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-
-                <Image Grid.Row="0" Grid.Column="0" Source="https://upload.cc/i1/2019/09/09/JH92AO.png" />
-
-                <Label Grid.Row="0" Grid.Column="1"  x:Name="TopBarTitle" Text="User Profile" FontSize="30" FontAttributes="Bold" VerticalOptions="Center" TextColor="#47525E"  HorizontalOptions="Center" />
-            </Grid>
-            <Label FontSize ="15" Text="Student ID: "    />
-            <Label FontSize ="15" Text="Student Name: "    />
-            <Label FontSize ="15" Text="IMEI Number: "    />
-            <Label FontSize ="15" Text="Student Units: "    />
-            <Button Text="Change IMEI" Clicked="Button_Clicked"/>
-            <Entry x:Name="submit" FontSize ="20"/>
-            <Entry x:Name="submit2" FontSize ="20"/>
-            <Button Text="Submit" HeightRequest="70" WidthRequest="10" FontSize ="25"  BackgroundColor ="#47525E" TextColor="White" Clicked="Button_Clicked"/>
-        </StackLayout>
+        <AbsoluteLayout>
+            <StackLayout BackgroundColor="#00A6FF"
+                         AbsoluteLayout.LayoutBounds="0,0,1,0.08"
+                         AbsoluteLayout.LayoutFlags="All">
+                <!--Create a Tital-->
+                <Label Text="My Profile"                      
+                       HorizontalOptions="CenterAndExpand" 
+                       HorizontalTextAlignment="Center" 
+                       FontSize="18" 
+                       VerticalOptions="CenterAndExpand" 
+                       FontFamily="Arial" 
+                       FontAttributes="Bold"/>
+            </StackLayout>
+            <!--Create a back button-->
+            <Button Text="Back" 
+                    BackgroundColor="#00A6FF" 
+                    FontSize="10"
+                    AbsoluteLayout.LayoutBounds="0,0,0.2,0.08"
+                    AbsoluteLayout.LayoutFlags="All" 
+                    Font="Arial"/>
+            <!--Create a user image-->
+            <Frame BorderColor="Black"
+                   CornerRadius="75"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.5,0.2,150,150"
+                   AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Image Source="https://upload.cc/i1/2019/09/18/hA7f5J.png"
+                       Aspect="Fill"
+                       Margin="-20"/>
+            </Frame>
+            <!--Create name box-->
+            <Frame BorderColor="Black"
+                   CornerRadius="10"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.5,0.44,0.8,0.1"
+                   AbsoluteLayout.LayoutFlags="All" 
+                   HorizontalOptions="FillAndExpand">
+                <Label Text="Name: "
+                       FontSize="16" 
+                       HorizontalOptions="StartAndExpand" 
+                       VerticalOptions="CenterAndExpand" 
+                       VerticalTextAlignment="Start"/>
+            </Frame>
+            <!--Create staff number box-->
+            <Frame BorderColor="Black"
+                   CornerRadius="10"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.5,0.56,0.8,0.1"
+                   AbsoluteLayout.LayoutFlags="All" 
+                   HorizontalOptions="FillAndExpand">
+                <Label Text="Student No.: "
+                          FontSize="16" 
+                          HorizontalOptions="StartAndExpand" 
+                          VerticalOptions="CenterAndExpand" 
+                          VerticalTextAlignment="Start"/>
+            </Frame>
+            <!--Create email box-->
+            <Frame BorderColor="Black"
+                   CornerRadius="10"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.5,0.68,0.8,0.1"
+                   AbsoluteLayout.LayoutFlags="All" 
+                   HorizontalOptions="FillAndExpand">
+                <Label Text="Email: "
+                          FontSize="16" 
+                          HorizontalOptions="StartAndExpand" 
+                          VerticalOptions="CenterAndExpand" 
+                          VerticalTextAlignment="Start"/>
+            </Frame>
+            <!--Create get verification code button-->
+            <Frame BorderColor="Black"
+                   CornerRadius="10"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.5,0.80,0.8,0.1"
+                   AbsoluteLayout.LayoutFlags="All" 
+                   HorizontalOptions="FillAndExpand">
+                <Label Text="Get verification code"
+                       FontSize="16" 
+                       HorizontalOptions="StartAndExpand" 
+                       VerticalOptions="CenterAndExpand"
+                       x:Name="lblClick"/>
+            </Frame>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
