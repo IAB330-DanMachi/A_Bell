@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="A_Bell.StaffProfile">
+             x:Class="A_Bell.StudentProfile">
     <ContentPage.Content>
         <AbsoluteLayout>
             <StackLayout BackgroundColor="#00A6FF"
@@ -49,14 +49,14 @@
                        VerticalOptions="CenterAndExpand" 
                        VerticalTextAlignment="Start"/>
             </Frame>
-            <!--Create staff number box-->
+            <!--Create student number box-->
             <Frame BorderColor="Black"
                    CornerRadius="10"
                    HasShadow="False"
                    AbsoluteLayout.LayoutBounds ="0.5,0.56,0.8,0.1"
                    AbsoluteLayout.LayoutFlags="All" 
                    HorizontalOptions="FillAndExpand">
-                <Label Text="Student No.: "
+                <Label Text="Studnet No.: "
                           FontSize="16" 
                           HorizontalOptions="StartAndExpand" 
                           VerticalOptions="CenterAndExpand" 
@@ -75,19 +75,22 @@
                           VerticalOptions="CenterAndExpand" 
                           VerticalTextAlignment="Start"/>
             </Frame>
-            <!--Create get verification code button-->
+            <!--Create phone model button-->
             <Frame BorderColor="Black"
                    CornerRadius="10"
                    HasShadow="False"
-                   AbsoluteLayout.LayoutBounds ="0.5,0.80,0.8,0.1"
+                   AbsoluteLayout.LayoutBounds ="0.5,0.8,0.8,0.1"
                    AbsoluteLayout.LayoutFlags="All" 
                    HorizontalOptions="FillAndExpand">
-                <Label Text="Get verification code"
+                <Label Text="Phone Model: "
                        FontSize="16" 
                        HorizontalOptions="StartAndExpand" 
                        VerticalOptions="CenterAndExpand"
                        x:Name="lblClick"/>
             </Frame>
+            <Label Text="*Please note that change phone model needs to get verfication code form your tutor"
+                   AbsoluteLayout.LayoutBounds ="0.5,0.88,0.8,0.05"
+                   AbsoluteLayout.LayoutFlags="All"/>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -30,7 +30,7 @@
     <EmbeddedResource Update="StudentInfo.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Studentprofile.xaml">
+    <EmbeddedResource Update="StudentProfile.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Teacherbluetooth.xaml">
