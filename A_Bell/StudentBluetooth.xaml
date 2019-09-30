@@ -56,6 +56,19 @@
                          BorderWidth="0.5"
                          BorderColor="Black"
                          BackgroundColor="White"/>
+            <!--Create device box-->
+            <Frame BorderColor="Black"
+                   CornerRadius="10"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.5,0.68,0.8,0.1"
+                   AbsoluteLayout.LayoutFlags="All" 
+                   HorizontalOptions="FillAndExpand">
+                <Label Text="Device name: "
+                          FontSize="16" 
+                          HorizontalOptions="Start" 
+                          VerticalOptions="CenterAndExpand" 
+                          VerticalTextAlignment="Start"/>
+            </Frame>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
