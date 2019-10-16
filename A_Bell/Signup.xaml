@@ -14,26 +14,28 @@
                    HorizontalOptions="Center"        
                    VerticalOptions="Start"
                    FontSize="30"    />
-            <Entry Placeholder="Number" />
+            <Entry x:Name ="Number" Placeholder="Number" />
             <Label Text=""    />
-            <Entry Placeholder="Email" />
+            <Entry x:Name ="Email" Placeholder="Email" />
             <Label Text=""    />
-            <Picker Title="Please select">
-                <Picker.Items>
-                    <x:String>Student</x:String>
-                    <x:String>Staff</x:String>
-                </Picker.Items>
-            </Picker>
+            <Entry x:Name ="Occupation" Placeholder="Occupation: Student / Staff" />
             <Label Text=""    />
-            <Entry Placeholder="Password" />
+            <Entry x:Name ="Password" Placeholder="Password" />
             <Label Text=""    />
-            <Entry Placeholder="Comfirm Password" />
+            <Entry x:Name ="ComfirmPassword" Placeholder="Comfirm Password" />
             <Label Text=""    />
-            <Button Text="Create your account" HeightRequest="70" WidthRequest="10" FontSize ="20"  BackgroundColor ="#47525E" TextColor="White"/>
-
+            <Button x:Name ="CreateAcc" Clicked="CreateAccButton_Clicked" Text="Create your account" HeightRequest="70" WidthRequest="10" FontSize ="20"  BackgroundColor ="#47525E" TextColor="White"/>
+            <Button x:Name="ShowAcc" Clicked="ShowAccButton_Clicked" Text="Show Data" HeightRequest="70" WidthRequest="10" FontSize ="20"  BackgroundColor ="#47525E" TextColor="White"/>
             <Label Text="Already have an account? Sign in"
                    HorizontalOptions="Center"        
                    VerticalOptions="End"    />
+            <ListView x:Name="Datalist">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Number}" Detail="{Binding Email}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
