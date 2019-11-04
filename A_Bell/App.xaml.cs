@@ -11,7 +11,7 @@ namespace A_Bell
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Bluetoothon());
+            MainPage = new NavigationPage(new Unitlist());
             
         }
 

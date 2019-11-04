@@ -89,16 +89,6 @@
                              Margin="-20"/>
             </Frame>
 
-
-            <ListView x:Name="studentList" >
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding Name}" Detail="{Binding Number}" />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            
-
             <Frame 
                    BackgroundColor="White"
                    HasShadow="False"
@@ -176,6 +166,20 @@
                              BackgroundColor="White"
                              Aspect="Fill"
                              Margin="-20"/>
+            </Frame>
+
+            <Frame 
+                   BackgroundColor="White"
+                   HasShadow="False"
+                   AbsoluteLayout.LayoutBounds ="0.05,0.49,0.2,0.12"
+                   AbsoluteLayout.LayoutFlags="PositionProportional">
+                <ListView x:Name="studentList" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Name}" Detail="{Binding Number}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </Frame>
 
         </AbsoluteLayout>
