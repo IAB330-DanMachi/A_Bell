@@ -14,9 +14,12 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="+"
                      Clicked="AddUnitClicked" />
+        <ToolbarItem Text="Select"
+                     Clicked="SelectClicked"/>
     </ContentPage.ToolbarItems>
 
-    <CollectionView x:Name="detailList">
+    <CollectionView x:Name="detailList"
+                    SelectionMode="None">
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <Grid Padding="10">

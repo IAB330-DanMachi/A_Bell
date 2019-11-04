@@ -34,6 +34,8 @@ namespace A_Bell.Views
         {
             await Navigation.PushAsync(new Addunit());
         }
-       
+        void SelectClicked(object sender, EventArgs e) {
+            detailList.SelectionMode = SelectionMode.Multiple;
+        }
     }
 }
