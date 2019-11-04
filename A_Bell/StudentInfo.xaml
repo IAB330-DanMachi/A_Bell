@@ -5,27 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="A_Bell.StudentInfo">
+    <NavigationPage.TitleView>
+        <Label Text="Student Information" 
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand"
+               FontSize="Title"/>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
         <AbsoluteLayout>
-            <StackLayout BackgroundColor="#00A6FF"
-                         AbsoluteLayout.LayoutBounds="0,0,1,0.08"
-                         AbsoluteLayout.LayoutFlags="All">
-                <!--Create a Tital-->
-                <Label Text="Student Information"                      
-                       HorizontalOptions="CenterAndExpand" 
-                       HorizontalTextAlignment="Center" 
-                       FontSize="18" 
-                       VerticalOptions="CenterAndExpand" 
-                       FontFamily="Arial" 
-                       FontAttributes="Bold"/>
-            </StackLayout>
-            <!--Create a back button-->
-            <Button Text="Back" 
-                    BackgroundColor="#00A6FF" 
-                    FontSize="10"
-                    AbsoluteLayout.LayoutBounds="0,0,0.2,0.08"
-                    AbsoluteLayout.LayoutFlags="All" 
-                    Font="Arial"/>
             <!--Create a user image-->
             <Frame BorderColor="Black"
                    CornerRadius="60"
@@ -39,7 +26,7 @@
             <!--Create a name tag for student-->
             <StackLayout AbsoluteLayout.LayoutBounds ="0.9,0.2,0.63,0.15"
                    AbsoluteLayout.LayoutFlags="All">
-                <Label Text="Student Name"
+                <Label Text="Steven"
                        FontFamily="Arial"
                        FontAttributes="Bold"
                        FontSize="28"
@@ -53,7 +40,7 @@
                    AbsoluteLayout.LayoutBounds ="0.5,0.44,0.8,0.1"
                    AbsoluteLayout.LayoutFlags="All" 
                    HorizontalOptions="FillAndExpand">
-                <Label Text="Email:  "
+                <Label Text="Email:  n8921485@qut.edu.au"
                        FontSize="16" 
                        HorizontalOptions="StartAndExpand" 
                        VerticalOptions="CenterAndExpand" 
@@ -66,7 +53,7 @@
                    AbsoluteLayout.LayoutBounds ="0.5,0.56,0.8,0.1"
                    AbsoluteLayout.LayoutFlags="All" 
                    HorizontalOptions="FillAndExpand">
-                <Label Text="Student ID: "
+                <Label Text="Student ID: n8921485"
                           FontSize="16" 
                           HorizontalOptions="StartAndExpand" 
                           VerticalOptions="CenterAndExpand" 

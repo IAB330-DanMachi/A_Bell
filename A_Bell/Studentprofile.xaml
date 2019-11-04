@@ -5,27 +5,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="A_Bell.StudentProfile">
+    <NavigationPage.TitleView>
+        <Label Text="My Profile" 
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand"
+               FontSize="Title"/>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
         <AbsoluteLayout>
-            <StackLayout BackgroundColor="#00A6FF"
-                         AbsoluteLayout.LayoutBounds="0,0,1,0.08"
-                         AbsoluteLayout.LayoutFlags="All">
-                <!--Create a Tital-->
-                <Label Text="My Profile"                      
-                       HorizontalOptions="CenterAndExpand" 
-                       HorizontalTextAlignment="Center" 
-                       FontSize="18" 
-                       VerticalOptions="CenterAndExpand" 
-                       FontFamily="Arial" 
-                       FontAttributes="Bold"/>
-            </StackLayout>
-            <!--Create a back button-->
-            <Button Text="Back" 
-                    BackgroundColor="#00A6FF" 
-                    FontSize="10"
-                    AbsoluteLayout.LayoutBounds="0,0,0.2,0.08"
-                    AbsoluteLayout.LayoutFlags="All" 
-                    Font="Arial"/>
+            
             <!--Create a user image-->
             <Frame BorderColor="Black"
                    CornerRadius="75"
