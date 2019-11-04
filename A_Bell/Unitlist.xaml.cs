@@ -21,7 +21,6 @@ namespace A_Bell.Views
         {
             connect = DependencyService.Get<connection>().GetConnection();
             connect.Table<Unit>();
-            Title = "                   Unit List";
             InitializeComponent();
 
             var data = (from units in connect.Table<Unit>() select units);
