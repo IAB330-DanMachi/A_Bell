@@ -5,42 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="A_Bell.Views.Unitlist">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="https://upload.cc/i1/2019/09/30/5iU6Cf.png"  Clicked="addUnitClicked"/>
+      
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
+
         <AbsoluteLayout>
 
-            <StackLayout BackgroundColor="#00A6FF"
-                         AbsoluteLayout.LayoutBounds="0,0,1,0.1"
-                         AbsoluteLayout.LayoutFlags="All">
-                <!--Create a Tital-->
-                <Label Text="Unit List"                      
-                       HorizontalOptions="CenterAndExpand" 
-                       VerticalOptions="CenterAndExpand"
-                       AbsoluteLayout.LayoutBounds="0.5,0.1,0.2,1"  
-                       AbsoluteLayout.LayoutFlags="All"
-                       FontSize="25" 
-                       FontFamily="Arial" 
-                       FontAttributes="Bold"/>
-
-            </StackLayout>
-
-            <Frame 
-                   BackgroundColor="#00A6FF"  
-                   AbsoluteLayout.LayoutBounds ="0,0,0.2,0.08"/>
-            <ImageButton Source="https://upload.cc/i1/2019/09/09/JH92AO.png"
-                    BackgroundColor="#00A6FF"
-                    AbsoluteLayout.LayoutBounds ="0,0.02,0.2,0.05"
-                AbsoluteLayout.LayoutFlags="All"        
-                             Margin="-20"/>
-
-            <Frame 
-                   BackgroundColor="#00A6FF"  
-                   AbsoluteLayout.LayoutBounds ="1,0,0.15,0.08"/>
-            <ImageButton Source="https://upload.cc/i1/2019/09/30/5iU6Cf.png"
-                    BackgroundColor="#00A6FF"
-                    AbsoluteLayout.LayoutBounds ="1,0.034,0.2,0.03"
-                AbsoluteLayout.LayoutFlags="All"        
-                             Margin="-20"/>
-            
             <StackLayout BackgroundColor="White"
                          AbsoluteLayout.LayoutBounds="0.2,0.12,1,0.2"
                          AbsoluteLayout.LayoutFlags="All">
