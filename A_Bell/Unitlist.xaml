@@ -5,41 +5,19 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="A_Bell.Views.Unitlist">
+    <NavigationPage.TitleView>
+        <Label Text="Unit List" 
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand"
+               FontSize="Title"/>
+    </NavigationPage.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+"
+                     Clicked="AddUnitClicked" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <AbsoluteLayout>
-
-            <StackLayout BackgroundColor="#00A6FF"
-                         AbsoluteLayout.LayoutBounds="0,0,1,0.08"
-                         AbsoluteLayout.LayoutFlags="All">
-                <!--Create a Tital-->
-                <Label Text="Unit List"                      
-                       HorizontalOptions="CenterAndExpand" 
-                       HorizontalTextAlignment="Center" 
-                       FontSize="18" 
-                       VerticalOptions="CenterAndExpand" 
-                       FontFamily="Arial" 
-                       FontAttributes="Bold"/>
-            </StackLayout>
-            <!--Create a back button-->
-            <Button Text="Back" 
-                    BackgroundColor="#00A6FF" 
-                    FontSize="10"
-                    AbsoluteLayout.LayoutBounds="0,0,0.2,0.08"
-                    AbsoluteLayout.LayoutFlags="All" 
-                    Font="Arial"/>
-            <!--Create a user image-->
-            <ImageButton Aspect="AspectFit"
-                         Source="https://upload.cc/i1/2019/09/18/FzulY5.png"                   
-                         AbsoluteLayout.LayoutBounds="1,0,0.2,0.08"
-                         AbsoluteLayout.LayoutFlags="All" 
-                         BackgroundColor="#00A6FF"/>
-            <!--Create an add button-->
-            <ImageButton Aspect="AspectFit"
-                         Source="https://upload.cc/i1/2019/11/03/s6DBQX.png"                   
-                         AbsoluteLayout.LayoutBounds="1,0.98,0.13,0.08"
-                         AbsoluteLayout.LayoutFlags="All" 
-                         BackgroundColor="#00A6FF"
-                         CornerRadius="5"/>
-        </AbsoluteLayout>
+        <CollectionView>
+            <!--Collection view 放进这里-->
+        </CollectionView>
     </ContentPage.Content>
 </ContentPage>

@@ -13,12 +13,11 @@ namespace A_Bell.Views
     public partial class Unitlist : ContentPage
     {
         public Unitlist()
-        {
-            Title = "                   Unit List";            
+        {            
             InitializeComponent();
         }
 
-        private async void addUnitClicked(object sender, EventArgs e)
+        async void AddUnitClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Addunit());
         }
