@@ -5,41 +5,28 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="A_Bell.StudentBluetooth">
+    <NavigationPage.TitleView>
+        <Label Text="Attendence" 
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand"
+               FontSize="Title"/>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
         <AbsoluteLayout>
-
-            <StackLayout BackgroundColor="#00A6FF"
-                         AbsoluteLayout.LayoutBounds="0,0,1,0.08"
-                         AbsoluteLayout.LayoutFlags="All">
-                <!--Create a Tital-->
-                <Label Text="IAB330"                      
-                       HorizontalOptions="CenterAndExpand" 
-                       HorizontalTextAlignment="Center" 
-                       FontSize="18" 
-                       VerticalOptions="CenterAndExpand" 
-                       FontFamily="Arial" 
-                       FontAttributes="Bold"/>
-            </StackLayout>
-            <!--Create a back button-->
-            <Button Text="Back"
-                    BackgroundColor="#00A6FF" 
-                    FontSize="10"
-                    AbsoluteLayout.LayoutBounds="0,0,0.2,0.08"
-                    AbsoluteLayout.LayoutFlags="All" 
-                    Font="Arial"/>
-            <!--Create a connect button-->
+            <!--Create a Scan button-->
             <Image Source="https://upload.cc/i1/2019/09/18/l2F8p9.png"
-                   AbsoluteLayout.LayoutBounds="0.5,0.3,100,100"
+                   AbsoluteLayout.LayoutBounds="0.5,0.1,100,100"
                    AbsoluteLayout.LayoutFlags="PositionProportional"
                    Margin="-30"/>
-            <Button Text="Connect"
+            <Button Text="Scan"
                     BackgroundColor="White"
                     BorderColor="White"
                     BorderWidth="1"
-                    AbsoluteLayout.LayoutBounds="0.5,0.3,100,100"
+                    AbsoluteLayout.LayoutBounds="0.5,0.1,100,100"
                     AbsoluteLayout.LayoutFlags="PositionProportional"
                     CornerRadius="50"
-                    Font="Arial"/>
+                    Font="Arial"
+                    Clicked="searchDevice"/>
             <!--Create a Report button-->
             <ImageButton Aspect="AspectFit"
                          Source="https://upload.cc/i1/2019/09/25/FjlZAH.png"
@@ -56,19 +43,27 @@
                          BorderWidth="0.5"
                          BorderColor="Black"
                          BackgroundColor="White"/>
-            <!--Create device box-->
-            <Frame BorderColor="Black"
-                   CornerRadius="10"
-                   HasShadow="False"
-                   AbsoluteLayout.LayoutBounds ="0.5,0.68,0.8,0.1"
-                   AbsoluteLayout.LayoutFlags="All" 
-                   HorizontalOptions="FillAndExpand">
-                <Label Text="Device name: "
-                          FontSize="16" 
-                          HorizontalOptions="Start" 
-                          VerticalOptions="CenterAndExpand" 
-                          VerticalTextAlignment="Start"/>
-            </Frame>
+            <!--Create device list box-->
+            <StackLayout
+                   AbsoluteLayout.LayoutBounds ="0.5,0.7,0.8,0.6"
+                   AbsoluteLayout.LayoutFlags="All" >
+                <!--Device List-->
+                <ListView x:Name="DevicesList"
+                      IsPullToRefreshEnabled="true"
+                      CachingStrategy="RecycleElement"
+                      ItemSelected="DevicesList_OnItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Label Text="{Binding NativeDevice.Name}"></Label>
+                                    <Label Text="{Binding NativeDevice.Address}" ></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
