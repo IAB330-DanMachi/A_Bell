@@ -11,7 +11,7 @@ namespace A_Bell
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new StaffBluetooth());
+            MainPage = new NavigationPage(new MainPage());
             
         }
 

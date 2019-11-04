@@ -31,7 +31,7 @@
                    CornerRadius="10">
                 <Label Text="Total: "
                        FontSize="Title"/>
-                <!--Total count-->
+                <!--Total count function-->
             </Frame>
             <Frame AbsoluteLayout.LayoutBounds="1,1,0.5,0.1"
                    AbsoluteLayout.LayoutFlags="All"
@@ -40,7 +40,7 @@
                    CornerRadius="10">
                 <Label Text="Attened: "
                        FontSize="Title"/>
-                <!--Attend count-->
+                <!--Attend count function-->
             </Frame>
         </AbsoluteLayout>
     </ContentPage.Content>
