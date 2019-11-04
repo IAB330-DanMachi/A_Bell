@@ -15,7 +15,7 @@ namespace A_Bell.Views
     {
 
         private SQLiteConnection connect;
-        private ListView unitlist;
+        
 
         public Unitlist()
         {

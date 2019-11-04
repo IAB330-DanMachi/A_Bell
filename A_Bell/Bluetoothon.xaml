@@ -21,7 +21,7 @@
                        FontAttributes="Bold"/>
 
             </StackLayout>
-
+            
             <!--Create a back button-->
             <Button Text="Back"    
                     BackgroundColor="Green"                     
@@ -89,12 +89,15 @@
                              Margin="-20"/>
             </Frame>
 
-            <Button BackgroundColor="Transparent"
-                    Text="Anna Sewell&#10;n9808470"
-                    AbsoluteLayout.LayoutBounds ="0.05,0.53,0.65,0.12" 
-                    AbsoluteLayout.LayoutFlags="All"
-                    FontSize="10"
-                    Font="Arial"/>
+
+            <ListView x:Name="studentList" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" Detail="{Binding Number}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
 
             <Frame 
                    BackgroundColor="White"
@@ -124,12 +127,7 @@
                              Margin="-20"/>
             </Frame>
 
-            <Button BackgroundColor="Transparent"
-                    Text="Jane Austen&#10;n98808452"
-                    AbsoluteLayout.LayoutBounds ="0.05,0.64,0.65,0.12" 
-                    AbsoluteLayout.LayoutFlags="All"
-                    FontSize="10"
-                    Font="Arial"/>
+          
 
             <Frame 
                    BackgroundColor="Transparent"
