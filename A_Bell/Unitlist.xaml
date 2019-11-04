@@ -15,9 +15,11 @@
         <ToolbarItem Text="+"
                      Clicked="AddUnitClicked" />
     </ContentPage.ToolbarItems>
-    <ContentPage.Content>
-        <CollectionView>
-            <!--Collection view 放进这里-->
-        </CollectionView>
-    </ContentPage.Content>
+    <ListView x:Name="detailList">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding UnitCode}" Detail="{Binding WorkShopTime}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>

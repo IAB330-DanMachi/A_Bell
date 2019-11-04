@@ -7,47 +7,24 @@
              x:Class="A_Bell.Views.Addunit" BackgroundImage="https://upload.cc/i1/2019/09/09/STHlNk.jpg">
     <ContentPage.Content>
         <StackLayout>
-            <Grid x:Name="TopBar"  BackgroundColor="#00A6FF"  >
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="7*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
 
-                <Frame 
-                   BackgroundColor="Transparent"
-                   HasShadow="False"
-                   AbsoluteLayout.LayoutBounds="0,0,0.2,0.1"
-                   AbsoluteLayout.LayoutFlags="All">
-                    <ImageButton Source="https://upload.cc/i1/2019/09/09/JH92AO.png"
-                             BackgroundColor="Transparent"
-                             Aspect="Fill"
-                             Margin="-20"/>
-                </Frame>
 
-                <Label Grid.Row="0" Grid.Column="1"  x:Name="TopBarTitle" Text="Add a new unit" FontSize="30" FontAttributes="Bold" VerticalOptions="Center" TextColor="#47525E"  HorizontalOptions="Center" />
-            </Grid>
+
             <Label Text=""    />
-            <Entry Placeholder="Unit Code" />
+            <Entry x:Name ="UnitCode" Placeholder="Unit Code" />
             <Label Text=""    />
-            <Entry Placeholder="Teaching Period" />
+            <Entry x:Name="TeachingPeriod" Placeholder="Teaching Period"/>
             <Label Text=""    />
-            <Entry Placeholder="Work Shop Time" />
+            <Entry x:Name ="WorkShopTime" Placeholder="Work Shop Time" />
             <Label Text=""    />
-            <Picker Title="Campus">
-                <Picker.Items>
-                    <x:String>Garden Point</x:String>
-                    <x:String>Kelvin Grove</x:String>
-                </Picker.Items>
-            </Picker>
+            <Entry x:Name ="Campus" Placeholder="Campus" />
             <Label Text=""    />
-            <Entry Placeholder="Room Number" />
+            <Entry x:Name ="RoomNumber" Placeholder="Room Number" />
             <Label Text=""    />
             <Label Text=""    />
-            <Button Text="Submit" HeightRequest="70" WidthRequest="10" FontSize ="20"  BackgroundColor ="#47525E" TextColor="White"/>
+            <Button Text="Submit" Clicked ="AddunitClicked" HeightRequest="70" WidthRequest="10" FontSize ="20"  BackgroundColor ="#47525E" TextColor="White"/>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
