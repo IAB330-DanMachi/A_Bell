@@ -18,11 +18,11 @@ namespace A_Bell
         public Bluetoothon()
         {
             InitializeComponent();
-            connect = DependencyService.Get<connection>().GetConnection();
-            connect.Table<User>();
+            //connect = DependencyService.Get<connection>().GetConnection();
+            //connect.Table<User>();
 
-            var data = (from users in connect.Table<User>() select users);
-            studentList.ItemsSource = data;
+            //var data = (from users in connect.Table<User>() select users);
+            //studentList.ItemsSource = data;
         }
 
     }

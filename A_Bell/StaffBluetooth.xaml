@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="A_Bell.StaffBluetooth">
+    <NavigationPage.TitleView>
+        <Label Text="Attendence" 
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand"
+               FontSize="Title"/>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout AbsoluteLayout.LayoutBounds="0.5,0,1,0.9"
+                         AbsoluteLayout.LayoutFlags="All">
+                <ListView x:Name="studentList">
+                   <!--Put Student Name and Number here-->
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Name}" Detail="{Binding Number}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <Frame AbsoluteLayout.LayoutBounds="0,1,0.5,0.1"
+                   AbsoluteLayout.LayoutFlags="All"
+                   BorderColor="Black"
+                   HasShadow="False"
+                   CornerRadius="10">
+                <Label Text="Total: "
+                       FontSize="Title"/>
+                <!--Total count-->
+            </Frame>
+            <Frame AbsoluteLayout.LayoutBounds="1,1,0.5,0.1"
+                   AbsoluteLayout.LayoutFlags="All"
+                   BorderColor="Black"
+                   HasShadow="False"
+                   CornerRadius="10">
+                <Label Text="Attened: "
+                       FontSize="Title"/>
+                <!--Attend count-->
+            </Frame>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
