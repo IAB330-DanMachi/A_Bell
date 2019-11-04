@@ -20,14 +20,26 @@
         <Label Text=""    />
         <Entry Placeholder="Password" />
         <Label Text=""    />
-        <Button Text="Sign in" HeightRequest="70" WidthRequest="10" FontSize ="20"  BackgroundColor ="#47525E" TextColor="White"/>
+        <Button Clicked ="SigninAccButton_Clicked" Text="Sign in" HeightRequest="70" WidthRequest="10" FontSize ="20"  BackgroundColor ="#47525E" TextColor="White"/>
         <Label Text=""    />
         <Label Text=""    />
         <Label Text=""    />
         <Label Text=""    />
-        <Label Text="Don't  have an account? Sign up"
-           HorizontalOptions="Center"        
-           VerticalOptions="End"    />
+        <Label HorizontalOptions="Center"
+       VerticalOptions="End" >
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Don't  have an account?" />
+                    <Span Text="Sign up"              
+                  TextDecorations="Underline">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="SignupLabel"/>
+                        </Span.GestureRecognizers>
+                    </Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
         <Label Text="Switch Phone? Click here"
            HorizontalOptions="Center"        
            VerticalOptions="End"    />

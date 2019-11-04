@@ -14,8 +14,14 @@ namespace A_Bell.Views
     {
         public Unitlist()
         {
+            Title = "                   Unit List";            
             InitializeComponent();
         }
 
+        private async void addUnitClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Addunit());
+        }
+       
     }
 }

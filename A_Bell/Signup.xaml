@@ -22,13 +22,28 @@
             <Label Text=""    />
             <Entry x:Name ="Password" Placeholder="Password" />
             <Label Text=""    />
-            <Entry x:Name ="ComfirmPassword" Placeholder="Comfirm Password" />
+            <Entry x:Name ="ConfirmPassword" Placeholder="Confirm Password" />
+            <Label x:Name="warningLabel" Text="Please enter the same password" IsVisible="False" TextColor="Red" FlexLayout.AlignSelf="End"/>
             <Label Text=""    />
             <Button x:Name ="CreateAcc" Clicked="CreateAccButton_Clicked" Text="Create your account" HeightRequest="70" WidthRequest="10" FontSize ="20"  BackgroundColor ="#47525E" TextColor="White"/>
             <Button x:Name="ShowAcc" Clicked="ShowAccButton_Clicked" Text="Show Data" HeightRequest="70" WidthRequest="10" FontSize ="20"  BackgroundColor ="#47525E" TextColor="White"/>
-            <Label Text="Already have an account? Sign in"
-                   HorizontalOptions="Center"        
-                   VerticalOptions="End"    />
+            <Label HorizontalOptions="Center"
+       VerticalOptions="End" >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Already have an account?" />
+                        <Span Text="Sign in"              
+                  TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="SigninLabel"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            
+            
+            
             <ListView x:Name="Datalist">
                 <ListView.ItemTemplate>
                     <DataTemplate>

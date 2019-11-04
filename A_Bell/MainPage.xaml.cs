@@ -1,4 +1,5 @@
-﻿using System;
+﻿using A_Bell.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -16,6 +17,19 @@ namespace A_Bell
         public MainPage()
         {
             InitializeComponent();
+            Xamarin.Forms.NavigationPage.SetHasNavigationBar(this, false);
         }
+
+        private async void SigninAccButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Unitlist());
+        }
+        
+
+        private async void SignupLabel(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Signup());
+        }
+
     }
 }

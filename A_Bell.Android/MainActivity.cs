@@ -22,6 +22,7 @@ namespace A_Bell.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
+            global::Xamarin.Forms.Forms.SetTitleBarVisibility(Xamarin.Forms.AndroidTitleBarVisibility.Never);
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
@@ -30,4 +31,5 @@ namespace A_Bell.Droid
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
+
 }
