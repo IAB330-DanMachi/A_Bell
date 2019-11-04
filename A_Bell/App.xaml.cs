@@ -11,7 +11,7 @@ namespace A_Bell
         {
             InitializeComponent();
 
-            MainPage = new Signup();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()

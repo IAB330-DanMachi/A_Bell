@@ -9,75 +9,37 @@
         <AbsoluteLayout>
 
             <StackLayout BackgroundColor="#00A6FF"
-                         AbsoluteLayout.LayoutBounds="0,0,1,0.1"
+                         AbsoluteLayout.LayoutBounds="0,0,1,0.08"
                          AbsoluteLayout.LayoutFlags="All">
                 <!--Create a Tital-->
                 <Label Text="Unit List"                      
                        HorizontalOptions="CenterAndExpand" 
-                       VerticalOptions="CenterAndExpand"
-                       AbsoluteLayout.LayoutBounds="0.5,0.1,0.2,1"  
-                       AbsoluteLayout.LayoutFlags="All"
-                       FontSize="25" 
+                       HorizontalTextAlignment="Center" 
+                       FontSize="18" 
+                       VerticalOptions="CenterAndExpand" 
                        FontFamily="Arial" 
                        FontAttributes="Bold"/>
-
             </StackLayout>
-
-            <Frame 
-                   BackgroundColor="#00A6FF"  
-                   AbsoluteLayout.LayoutBounds ="0,0,0.2,0.08"/>
-            <ImageButton Source="https://upload.cc/i1/2019/09/09/JH92AO.png"
-                    BackgroundColor="#00A6FF"
-                    AbsoluteLayout.LayoutBounds ="0,0.02,0.2,0.05"
-                AbsoluteLayout.LayoutFlags="All"        
-                             Margin="-20"/>
-
-            <Frame 
-                   BackgroundColor="#00A6FF"  
-                   AbsoluteLayout.LayoutBounds ="1,0,0.15,0.08"/>
-            <ImageButton Source="https://upload.cc/i1/2019/09/30/5iU6Cf.png"
-                    BackgroundColor="#00A6FF"
-                    AbsoluteLayout.LayoutBounds ="1,0.034,0.2,0.03"
-                AbsoluteLayout.LayoutFlags="All"        
-                             Margin="-20"/>
-            
-            <StackLayout BackgroundColor="White"
-                         AbsoluteLayout.LayoutBounds="0.2,0.12,1,0.2"
-                         AbsoluteLayout.LayoutFlags="All">
-                <Label Text="&#10;&#13;&#13;&#13;&#13;&#13;IAB330&#10;&#13;&#13;&#13;&#13;&#13;Workshop, GP S-502&#10;&#13;&#13;&#13;&#13;&#13;Wednesday 4:00p.m. - 6:00p.m."
-                       BackgroundColor="White"
-
-                       AbsoluteLayout.LayoutBounds="0.2,0.2,1,0.1"   
-                       FontSize="20" 
-                       FontFamily="Arial" 
-                       FontAttributes="Bold"
-                       AbsoluteLayout.LayoutFlags="All"/>
-            </StackLayout>
-            
-            <StackLayout BackgroundColor="White"
-                         AbsoluteLayout.LayoutBounds="0.2,0.28,1,0.01"
-                         AbsoluteLayout.LayoutFlags="All">
-                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="Black"  AbsoluteLayout.LayoutBounds="0,1,1,0.3"/>
-            </StackLayout>
-            
-            <StackLayout BackgroundColor="White"
-                         AbsoluteLayout.LayoutBounds="0.2,0.35,1,0.2"
-                         AbsoluteLayout.LayoutFlags="All">
-                <Label Text="&#10;&#13;&#13;&#13;&#13;&#13;IAB330&#10;&#13;&#13;&#13;&#13;&#13;Workshop, GP S-502&#10;&#13;&#13;&#13;&#13;&#13;Wednesday 4:00p.m. - 6:00p.m."
-                       
-                       BackgroundColor="White"
-
-                       AbsoluteLayout.LayoutBounds="0.2,0.2,1,0.1"   
-                       FontSize="20" 
-                       FontFamily="Arial" 
-                       FontAttributes="Bold"
-                       AbsoluteLayout.LayoutFlags="All"/>
-            </StackLayout>
-            
-
-
-            
-
+            <!--Create a back button-->
+            <Button Text="Back" 
+                    BackgroundColor="#00A6FF" 
+                    FontSize="10"
+                    AbsoluteLayout.LayoutBounds="0,0,0.2,0.08"
+                    AbsoluteLayout.LayoutFlags="All" 
+                    Font="Arial"/>
+            <!--Create a user image-->
+            <ImageButton Aspect="AspectFit"
+                         Source="https://upload.cc/i1/2019/09/18/FzulY5.png"                   
+                         AbsoluteLayout.LayoutBounds="1,0,0.2,0.08"
+                         AbsoluteLayout.LayoutFlags="All" 
+                         BackgroundColor="#00A6FF"/>
+            <!--Create an add button-->
+            <ImageButton Aspect="AspectFit"
+                         Source="https://upload.cc/i1/2019/11/03/s6DBQX.png"                   
+                         AbsoluteLayout.LayoutBounds="1,0.98,0.13,0.08"
+                         AbsoluteLayout.LayoutFlags="All" 
+                         BackgroundColor="#00A6FF"
+                         CornerRadius="5"/>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
