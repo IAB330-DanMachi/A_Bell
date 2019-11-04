@@ -30,6 +30,12 @@ namespace A_Bell.Views
                 await DisplayAlert("Enter Data", "Number is a required field!", "OK");
             }
 
+            else if (string.IsNullOrWhiteSpace(Name.Text) || (string.IsNullOrEmpty(Name.Text)))
+            {
+                await DisplayAlert("Enter Data", "Email is a required field!", "OK");
+
+            }
+
             else if (string.IsNullOrWhiteSpace(Email.Text) || (string.IsNullOrEmpty(Email.Text)))
             {
                 await DisplayAlert("Enter Data", "Email is a required field!", "OK");
@@ -67,16 +73,18 @@ namespace A_Bell.Views
 
             user = new User();
             user.Number = Number.Text;
+            user.Name = Name.Text;
             user.Email = Email.Text;
             user.Occupation = Occupation.Text;
             user.Password = Password.Text;
             connect.Insert(user);
             Number.Text = "";
+            Name.Text = "";
             Email.Text = "";
             Occupation.Text = "";
             Password.Text = "";
 
-            DisplayAlert("Registration message", "Rigistration successful", "OK");
+            await DisplayAlert("Registration message", "Rigistration successful", "OK");
             await Navigation.PushAsync(new MainPage());
 
         }

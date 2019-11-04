@@ -15,11 +15,44 @@
         <ToolbarItem Text="+"
                      Clicked="AddUnitClicked" />
     </ContentPage.ToolbarItems>
-    <ListView x:Name="detailList">
-        <ListView.ItemTemplate>
+
+    <CollectionView x:Name="detailList">
+        <CollectionView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding UnitCode}" Detail="{Binding WorkShopTime}" />
+                <Grid Padding="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="1"
+                       Text="{Binding UnitCode}"
+                       FontAttributes="Bold" FontSize="25" />
+                    <Label Grid.Row="1"
+                       Grid.Column="1"
+                       Text="{Binding Campus}"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" FontSize="20" />
+                    <Label Grid.Row="1"
+                       Grid.Column="2"
+                       Text="{Binding RoomNumber}"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" FontSize="20" />
+                    <Label Grid.Row="2"
+                       Grid.Column="1"
+                       Text="{Binding WorkShopTime}"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" FontSize="20" />
+
+               
+                </Grid>
             </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+
+
 </ContentPage>
